@@ -1275,6 +1275,161 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "L1 - Murata LQH4C6R8M04"
+		(exclude_from_sim no)
+		(at 258.064 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "04f8f6e0-c9c7-4dc4-9c55-565834c195db")
+	)
+	(text "C1 - Taiyo Yuden JMK212BJ106MG"
+		(exclude_from_sim no)
+		(at 261.62 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a5b6cd33-1b38-4413-95c3-4ddec1737c32")
+	)
+	(text "D1 - ON Semi MBR0530"
+		(exclude_from_sim no)
+		(at 256.54 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ab96e19c-616c-4399-9129-e406ea0158f4")
+	)
+	(text "C3 - Taiyo Yuden EMK316BJ475ML"
+		(exclude_from_sim no)
+		(at 261.62 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d5ecd7ba-2c6a-4754-a112-5e4aaa56ac07")
 	)
 	(junction
 		(at 118.11 95.25)
@@ -1301,6 +1456,24 @@
 		(uuid "47bbad5b-faea-4abd-abec-2439baa37d12")
 	)
 	(junction
+		(at 88.9 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8978c244-9b78-424b-a44e-dca78813bb0a")
+	)
+	(junction
+		(at 162.56 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8af5f1ea-5d20-46ec-97ed-26d55bbaca52")
+	)
+	(junction
+		(at 224.79 91.5963)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "938d4957-d698-4dcc-b389-92a28cfc7eb9")
+	)
+	(junction
 		(at 168.91 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1317,6 +1490,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d57e94a4-24d0-4fea-9850-975173848d4a")
+	)
+	(junction
+		(at 102.87 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e38d40e4-ca11-4275-ba11-a6b223821612")
 	)
 	(junction
 		(at 194.31 111.76)
@@ -1339,6 +1518,26 @@
 			(type default)
 		)
 		(uuid "0344913b-b382-4f84-a8f4-dfc778d421cc")
+	)
+	(wire
+		(pts
+			(xy 224.79 91.5963) (xy 224.79 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "164477dc-6189-41d9-bc36-8a1db5ab944b")
+	)
+	(wire
+		(pts
+			(xy 162.56 93.98) (xy 162.56 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17d33c60-2cbf-4b08-a11a-e6e7fe458d22")
 	)
 	(wire
 		(pts
@@ -1402,7 +1601,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 95.25) (xy 168.91 95.25)
+			(xy 161.29 95.25) (xy 162.56 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1442,6 +1641,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 95.25) (xy 168.91 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fcb6487-87aa-4bc7-92ec-c5da26121862")
+	)
+	(wire
+		(pts
 			(xy 77.47 86.36) (xy 77.47 91.44)
 		)
 		(stroke
@@ -1472,6 +1681,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 91.44) (xy 102.87 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "799ea030-ea81-494c-819f-279c2fbd8c5e")
+	)
+	(wire
+		(pts
 			(xy 184.15 95.25) (xy 194.31 95.25)
 		)
 		(stroke
@@ -1489,6 +1708,16 @@
 			(type default)
 		)
 		(uuid "7cdb9f40-faa9-4ded-b429-0aaed638c8c0")
+	)
+	(wire
+		(pts
+			(xy 102.87 105.41) (xy 102.87 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "867a6fc3-f6ce-4ca6-b35c-8ebdec9efdc4")
 	)
 	(wire
 		(pts
@@ -1652,7 +1881,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 90.17) (xy 224.79 95.25)
+			(xy 224.79 90.17) (xy 224.79 91.5963)
 		)
 		(stroke
 			(width 0)
@@ -1662,7 +1891,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 91.44) (xy 102.87 91.44)
+			(xy 77.47 91.44) (xy 88.9 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1681,7 +1910,7 @@
 		(uuid "f1c5124e-406a-48d6-9fe5-b9f3f643cc29")
 	)
 	(label "FB"
-		(at 162.56 105.41 0)
+		(at 163.83 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1691,7 +1920,7 @@
 		(uuid "7f5b57bf-1452-4b20-91e2-a7646019a5d9")
 	)
 	(label "SW"
-		(at 162.56 95.25 0)
+		(at 163.83 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1722,7 +1951,7 @@
 				)
 			)
 		)
-		(property "Value" "?"
+		(property "Value" "ON Semi MBR0530"
 			(at 180.6575 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1732,7 +1961,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 180.34 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -1803,7 +2032,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "?"
+		(property "Value" "205K"
 			(at 196.85 118.1099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1814,7 +2043,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 192.532 116.84 90)
 			(hide yes)
 			(show_name no)
@@ -2019,8 +2248,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 102.87 105.41 0)
+		(lib_id "power:PWR_FLAG")
+		(at 88.9 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2029,9 +2258,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "575561d1-c176-4096-af4a-431393e9f13f")
-		(property "Reference" "#PWR02"
-			(at 102.87 111.76 0)
+		(uuid "3d74dd60-5660-43e5-adae-6099fa3b27ba")
+		(property "Reference" "#FLG01"
+			(at 88.9 89.535 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2041,8 +2270,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 102.87 110.49 0)
+		(property "Value" "PWR_FLAG"
+			(at 88.9 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2052,7 +2281,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 105.41 0)
+			(at 88.9 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2063,7 +2292,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 105.41 0)
+			(at 88.9 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 88.9 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3eecaadf-f79b-4f54-b97a-21dcbefd83a3")
+		)
+		(instances
+			(project "tps61040DBVR-boost-converter-module"
+				(path "/83fad544-d858-4240-8021-0b7d873cb49d"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 102.87 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "575561d1-c176-4096-af4a-431393e9f13f")
+		(property "Reference" "#PWR02"
+			(at 102.87 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2074,7 +2381,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 105.41 0)
+			(at 102.87 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2206,7 +2513,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DBV0005A"
+		(property "Footprint" "TPS61040DBVR:DBV0005A"
 			(at 140.97 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -2288,7 +2595,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "?"
+		(property "Value" "1.8M"
 			(at 196.85 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2299,7 +2606,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 192.532 102.87 90)
 			(hide yes)
 			(show_name no)
@@ -2369,7 +2676,7 @@
 				)
 			)
 		)
-		(property "Value" "?"
+		(property "Value" "6.8uH"
 			(at 143.51 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2379,7 +2686,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1812_4532Metric"
 			(at 143.51 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -2506,6 +2813,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 102.87 105.41 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b348a34c-8887-4c4e-a1c9-7af5ca46f9a6")
+		(property "Reference" "#FLG02"
+			(at 100.965 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 99.06 105.4099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 102.87 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b9029cba-86ec-4e35-9cb3-b9316ef16f6e")
+		)
+		(instances
+			(project "tps61040DBVR-boost-converter-module"
+				(path "/83fad544-d858-4240-8021-0b7d873cb49d"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 194.31 124.46 0)
 		(unit 1)
@@ -2606,7 +2992,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "4.7uF"
 			(at 222.25 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2617,7 +3003,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 219.4052 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -2666,6 +3052,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 162.56 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df1a2210-aa35-4966-9fc2-0c135b1a0dca")
+		(property "Reference" "#FLG03"
+			(at 162.56 92.075 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 162.56 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 162.56 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bd9c60d0-e7ef-46ab-94dc-070bbf56d29d")
+		)
+		(instances
+			(project "tps61040DBVR-boost-converter-module"
+				(path "/83fad544-d858-4240-8021-0b7d873cb49d"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 205.74 102.87 0)
 		(unit 1)
@@ -2688,7 +3152,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "30pF"
+		(property "Value" "4.7pF"
 			(at 209.55 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2699,7 +3163,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 206.7052 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -2748,6 +3212,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 224.79 91.5963 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8ad1881-51af-4e56-b0da-a5435f4658fd")
+		(property "Reference" "#FLG04"
+			(at 226.695 91.5963 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 228.6 91.5962 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 224.79 91.5963 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 91.5963 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 224.79 91.5963 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "105518ca-3bfe-4341-addb-ad3ccb08ba9e")
+		)
+		(instances
+			(project "tps61040DBVR-boost-converter-module"
+				(path "/83fad544-d858-4240-8021-0b7d873cb49d"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 102.87 99.06 0)
 		(unit 1)
@@ -2770,7 +3313,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "4.7uF"
 			(at 106.68 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2781,7 +3324,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 103.8352 102.87 0)
 			(hide yes)
 			(show_name no)
