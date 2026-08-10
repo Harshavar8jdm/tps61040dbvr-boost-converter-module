@@ -1561,6 +1561,18 @@
 		)
 		(uuid "ab96e19c-616c-4399-9129-e406ea0158f4")
 	)
+	(text "TPS61040DBVR 5V TO 12V BOOST CONVERTER"
+		(exclude_from_sim no)
+		(at 149.86 64.77 0)
+		(effects
+			(font
+				(size 4 4)
+				(thickness 0.4)
+				(bold yes)
+			)
+		)
+		(uuid "b01e0f13-ada8-471d-9095-154d475d55bd")
+	)
 	(text "C3 - Taiyo Yuden EMK316BJ475ML"
 		(exclude_from_sim no)
 		(at 140.97 135.89 0)
