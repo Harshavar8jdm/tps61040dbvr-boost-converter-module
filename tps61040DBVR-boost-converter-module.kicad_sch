@@ -5,6 +5,146 @@
 	(uuid "83fad544-d858-4240-8021-0b7d873cb49d")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Conn_01x01_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01_Pin"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x01_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1393,7 +1533,7 @@
 	)
 	(text "L1 - Murata LQH4C6R8M04"
 		(exclude_from_sim no)
-		(at 258.064 104.14 0)
+		(at 258.064 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1403,7 +1543,7 @@
 	)
 	(text "C1 - Taiyo Yuden JMK212BJ106MG"
 		(exclude_from_sim no)
-		(at 261.62 99.06 0)
+		(at 261.62 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1413,7 +1553,7 @@
 	)
 	(text "D1 - ON Semi MBR0530"
 		(exclude_from_sim no)
-		(at 256.54 106.68 0)
+		(at 256.54 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1423,13 +1563,19 @@
 	)
 	(text "C3 - Taiyo Yuden EMK316BJ475ML"
 		(exclude_from_sim no)
-		(at 261.62 101.6 0)
+		(at 261.62 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "d5ecd7ba-2c6a-4754-a112-5e4aaa56ac07")
+	)
+	(junction
+		(at 77.47 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23bd04c2-deef-404a-9737-8667660c22a2")
 	)
 	(junction
 		(at 118.11 95.25)
@@ -1492,6 +1638,12 @@
 		(uuid "d57e94a4-24d0-4fea-9850-975173848d4a")
 	)
 	(junction
+		(at 224.79 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dcdc757f-5547-4d95-862e-2a4f0d29c8fb")
+	)
+	(junction
 		(at 102.87 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1521,6 +1673,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 95.25) (xy 234.95 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "150763e3-220d-4672-b48d-ebae769d152b")
+	)
+	(wire
+		(pts
 			(xy 224.79 91.5963) (xy 224.79 95.25)
 		)
 		(stroke
@@ -1538,6 +1700,16 @@
 			(type default)
 		)
 		(uuid "17d33c60-2cbf-4b08-a11a-e6e7fe458d22")
+	)
+	(wire
+		(pts
+			(xy 233.68 97.79) (xy 234.95 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d42ea35-a0d6-47fc-a703-412ef8682594")
 	)
 	(wire
 		(pts
@@ -1578,6 +1750,16 @@
 			(type default)
 		)
 		(uuid "28e8e653-96f9-4690-8bf7-ea62c6a237e3")
+	)
+	(wire
+		(pts
+			(xy 63.5 91.44) (xy 77.47 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "310913af-ba6f-483f-bb8c-79582a6af661")
 	)
 	(wire
 		(pts
@@ -1628,6 +1810,26 @@
 			(type default)
 		)
 		(uuid "5b6cebf6-39aa-40c1-943f-265be697fb68")
+	)
+	(wire
+		(pts
+			(xy 233.68 101.6) (xy 233.68 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5df3b457-853b-45bb-9326-f827176c7afe")
+	)
+	(wire
+		(pts
+			(xy 67.31 93.98) (xy 63.5 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e10c49f-1cd5-4a2a-be9e-f6f3cdf403cd")
 	)
 	(wire
 		(pts
@@ -1708,6 +1910,16 @@
 			(type default)
 		)
 		(uuid "7cdb9f40-faa9-4ded-b429-0aaed638c8c0")
+	)
+	(wire
+		(pts
+			(xy 67.31 99.06) (xy 67.31 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84900111-5522-415b-8da0-5d9c66dcdff8")
 	)
 	(wire
 		(pts
@@ -2404,6 +2616,234 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 240.03 95.25 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "703e3ab5-55d1-4b92-aadd-c54db66a367d")
+		(property "Reference" "J2"
+			(at 240.665 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V"
+			(at 250.825 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
+			(at 240.03 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 240.03 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "65ea7a54-1ee0-4b0e-9192-2d4f38a48bd1")
+		)
+		(instances
+			(project "tps61040DBVR-boost-converter-module"
+				(path "/83fad544-d858-4240-8021-0b7d873cb49d"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 240.03 97.79 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8609ccff-ec37-4369-9022-bc153bf58f65")
+		(property "Reference" "J4"
+			(at 240.665 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 250.825 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
+			(at 240.03 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 240.03 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a751d384-ca21-4aee-82ca-07354ffe14ac")
+		)
+		(instances
+			(project "tps61040DBVR-boost-converter-module"
+				(path "/83fad544-d858-4240-8021-0b7d873cb49d"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 58.42 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9001ca8d-c823-4b6c-a193-b9616d0b15ea")
+		(property "Reference" "J3"
+			(at 59.055 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 52.705 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
+			(at 58.42 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 58.42 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "91c01130-bcca-4b09-9801-68de4827fa2d")
+		)
+		(instances
+			(project "tps61040DBVR-boost-converter-module"
+				(path "/83fad544-d858-4240-8021-0b7d873cb49d"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 165.1 123.19 0)
 		(unit 1)
@@ -2476,6 +2916,84 @@
 			(project "tps61040DBVR-boost-converter-module"
 				(path "/83fad544-d858-4240-8021-0b7d873cb49d"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 233.68 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97b5c879-d6f1-4533-ac6d-803fc20a0881")
+		(property "Reference" "#PWR08"
+			(at 233.68 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 233.68 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 233.68 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f5b1d5b5-eea0-45d3-afa5-ba7fafc1507e")
+		)
+		(instances
+			(project "tps61040DBVR-boost-converter-module"
+				(path "/83fad544-d858-4240-8021-0b7d873cb49d"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -2729,6 +3247,82 @@
 			(project "tps61040DBVR-boost-converter-module"
 				(path "/83fad544-d858-4240-8021-0b7d873cb49d"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 58.42 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a9d0c6ee-c442-47a1-b8cf-45882048a45a")
+		(property "Reference" "J1"
+			(at 59.055 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 52.705 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
+			(at 58.42 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 58.42 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b66167ef-4daa-4ef8-b7e5-1a59c4ae941d")
+		)
+		(instances
+			(project "tps61040DBVR-boost-converter-module"
+				(path "/83fad544-d858-4240-8021-0b7d873cb49d"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -3285,6 +3879,84 @@
 			(project "tps61040DBVR-boost-converter-module"
 				(path "/83fad544-d858-4240-8021-0b7d873cb49d"
 					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 67.31 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef2c844d-73ab-42e0-b5c3-0141120401ef")
+		(property "Reference" "#PWR09"
+			(at 67.31 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 67.31 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 67.31 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d3f6bcbb-63f8-4441-b61f-721d3ddc16f2")
+		)
+		(instances
+			(project "tps61040DBVR-boost-converter-module"
+				(path "/83fad544-d858-4240-8021-0b7d873cb49d"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
